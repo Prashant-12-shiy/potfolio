@@ -1,0 +1,21 @@
+.contact {
+    margin: 10rem 2rem 5rem 2rem;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin: 2vh 15vh;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-items h3{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}

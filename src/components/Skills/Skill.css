@@ -1,0 +1,169 @@
+.skills {
+    padding-top: 100px;
+    width: 60vw;
+    margin: auto;
+}
+
+.skills h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+  
+}
+
+.skills-item div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 1s box-shadow;
+    position: relative;
+    border-radius: 75px;
+}
+
+
+.skills-item div:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+ .skills-item div:hover::before, .skills-item div:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+ .skills-item div:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+
+.skills-item div img {
+    width: 50px;
+}
+
+
+.skills-item div h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.skills-item div h2::after {
+    position: absolute;
+}
+
+.light-mode {
+    background-color: white; /* Light background color */
+  }
+  
+  .dark-mode {
+    background-color: rgb(15 23 42); /* Dark background color */
+  }
+
+@media (max-width: 760px) {
+    .skills-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .skills-item {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+}

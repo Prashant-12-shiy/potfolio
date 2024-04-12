@@ -1,0 +1,20 @@
+.nav-right img {
+    height: 50px;
+    width: 75px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.social-icon svg {
+    transition: fill 0.9s ease;
+}
+
+.social-icon svg:hover{
+    filter: drop-shadow(0 0 15px #405aa0);
+    fill: url(#bones-gradient);
+}
