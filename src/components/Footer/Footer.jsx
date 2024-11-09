@@ -16,9 +16,9 @@ export const Footer = ({darkMode}) => {
                 <li>
                     <a href="#hero" >About</a>
                 </li>
-                <li>
+                {/* <li>
                     Contact
-                </li>
+                </li> */}
             </ul>
         </div>
         <hr />

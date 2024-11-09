@@ -9,17 +9,22 @@ import javascript_dark from "../../assets/javascript_dark.png"
 import react from "../../assets/react.png"
 import tailwind from "../../assets/tailwind.png"
 import figma from "../../assets/figma.png"
+import nextjs from "../../assets/nextjs.svg"
+import nodejs from "../../assets/nodejs.svg"
+import monogoDb from "../../assets/mongodb.svg"
 
 
 export const Skill = ({darkMode}) => {
 
     const skillsItems = [
-        {img: darkMode ? html_dark : html_light, title: 'HTML'},
-        {img: darkMode ? css_dark : css_light, title: 'CSS'},
+        // {img: darkMode ? html_dark : html_light, title: 'HTML'},
+        // {img: darkMode ? css_dark : css_light, title: 'CSS'},
         {img: darkMode ? javascript_dark : javascript_light, title: 'JavaSCript'},
         {img: react, title: 'React'},
         {img: tailwind, title: 'Tailwind'},
-        {img: figma, title: 'Figma'},
+        {img: nextjs, title: 'NextJS'},
+        {img: nodejs, title: 'Node Js'},
+        {img: monogoDb, title: 'Mongo DB'},
     ]
 
   return (

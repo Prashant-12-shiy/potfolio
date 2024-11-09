@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div className='hero' id='hero'>
         <div className='image-side'>
-            <img className='border-slate-500 border-8 dark:border-0' src={HeroImg} alt="" />
+            <img className='border-slate-500 border-8 dark:border-0 rounded-full object-contain' src={HeroImg} alt="" />
         </div>
         <div className='hero-content'>
             <h1 >Hello World! I'm Prashant Thapa,</h1>
